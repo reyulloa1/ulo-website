@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Clarity Audit | Ulo</title>
+    <meta name="description" content="Run Ulo's free clarity audit and quickly identify where message, offer, and CTA flow may be blocking conversions." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="index.html" class="logo">Ulo.</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a class="active" href="clarity-audit.html">Clarity Audit</a>
+          <a href="lite-trial.html">Lite Trial</a>
+          <a href="about.html">About</a>
+          <a href="booking.html">Book</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero reveal">
+        <span class="badge">Free</span>
+        <h1>Clarity Audit</h1>
+        <p class="lead">A fast, self-serve check to reveal what may be costing you leads right now.</p>
+      </section>
+
+      <section class="section reveal split">
+        <article class="card">
+          <h2>Run your audit</h2>
+          <p class="note">Rate each area from 1 (unclear) to 5 (very clear).</p>
+
+          <form id="audit-form" class="form-row">
+            <div class="form-grid">
+              <div>
+                <label class="label" for="message">Message clarity</label>
+                <select id="message" name="message" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                </select>
+              </div>
+              <div>
+                <label class="label" for="offer">Offer clarity</label>
+                <select id="offer" name="offer" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                </select>
+              </div>
+              <div>
+                <label class="label" for="structure">Page structure</label>
+                <select id="structure" name="structure" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                </select>
+              </div>
+              <div>
+                <label class="label" for="trust">Proof and trust signals</label>
+                <select id="trust" name="trust" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                </select>
+              </div>
+              <div class="full">
+                <label class="label" for="cta">CTA path clarity</label>
+                <select id="cta" name="cta" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+                </select>
+              </div>
+            </div>
+            <div class="actions">
+              <button type="submit" class="btn primary">See my score</button>
+              <a class="btn ghost" href="booking.html">Book a clarity call</a>
+            </div>
+          </form>
+
+          <p id="audit-result" class="card" hidden></p>
+        </article>
+
+        <aside class="card">
+          <h3>What you get</h3>
+          <p>Immediate score, quick interpretation, and a practical next step based on your current clarity level.</p>
+          <p class="note">This version is for visual planning. Email delivery and CRM handoff can be connected when you go live.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">© <span id="year"></span> Ulo</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

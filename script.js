@@ -52,3 +52,15 @@ if (auditForm && auditResult) {
     auditResult.hidden = false;
   });
 }
+
+const siteHeader = document.querySelector(".site-header");
+
+if (siteHeader) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      siteHeader.classList.add("scrolled");
+    } else {
+      siteHeader.classList.remove("scrolled");
+    }
+  });
+}
